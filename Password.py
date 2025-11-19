@@ -15,11 +15,15 @@ def signup():
 
     hasAt = 0
     eInvalid =1
-    pInvalid = 1
+    letterInvalid = 1
 
+    letters = 0
+
+    #isdigit??
 
     print("Welcome to the Study Johnny and William (SJW) organization. Register an account here.")
     print("   ")
+
     while eInvalid == 1:
         
         email = str(input("Enter your email: "))
@@ -34,11 +38,27 @@ def signup():
         else:
             print("Your email did not have an @ symbol.")
             print("   ")
+            hasAt=0
 
 
+    #password
 
-    while pInvalid == 1:
-        password = str(input("Enter a password. It must have 8 characters, include a number, amd a capital letter: "))
+    #letter requirements:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       6767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767667766776677667766776677667766776677667766776677667766776677667766776677667766776677667766776677667766776677667766776677666777666777666777666777666777666777666777666777666777666777666777666777666777666777666777666777666777666677776666777766667777666677776666777766667777
+    while letterInvalid == 1:
+        password = str(input("Enter a password. It must have 8 characters, include a number, and a capital letter: "))
+
+        for char in password:
+            letters = letters + 1
+        if letters >= 8: 
+            letterInvalid  = 0
+        elif letters < 8:
+            letters = 0
+            
+        
+            
+            
+
+
 
 signup()
 
@@ -50,3 +70,4 @@ signup()
 
 
 
+#if type(email) != str
