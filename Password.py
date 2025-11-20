@@ -18,7 +18,7 @@ def signup():
     letterInvalid = 1
 
     letters = 0
-
+    hasNumber = 0
     #isdigit??
 
     print("Welcome to the Study Johnny and William (SJW) organization. Register an account here.")
@@ -49,11 +49,42 @@ def signup():
 
         for char in password:
             letters = letters + 1
-        if letters >= 8: 
-            letterInvalid  = 0
-        elif letters < 8:
-            letters = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
+        if letters >= 8: 
+            letters = 0
+        elif letters < 8:
+            
+            letterInvalid  = 0
+            print("You need to have at least 8 letters.")
+            print(" ")
+    
+    #number:
         
             
             
