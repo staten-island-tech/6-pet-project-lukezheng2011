@@ -1,4 +1,4 @@
-""" class Hero:
+class Hero:
     def __init__(self, name, money, inventory):
         self.name = name
         self.money = money
@@ -8,31 +8,7 @@
         self.inventory.append(item)
         print(self.inventory)
 
-    
-    
-    
-Jillian = Hero("Jillian", 150, ["Potion"]) """
+Billybob = Hero("Billybob", 67, ['Johnnys Shoes', 'Williams Backpack'])
 
-# class Calculator():
-#     def add(x, y):
-#         print(x + y)
-#         return x + y
-
-#     def add_many(numbers):
-#         print(sum(numbers))
-#         return sum(numbers)
-
-#     def subtract(numbers):
-#         return numbers
-
-# Calculator.add(5, 6)
-
-
-
-
-
-
-
-
-
+Billybob.buy(input("What items would you like to add to Billybob's inventory: "))
 
