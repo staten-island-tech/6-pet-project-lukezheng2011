@@ -22,3 +22,9 @@
 
 class Pet: 
     def __init__(self, name, happiness):
+        self.name == name
+        self.happiness == happiness
+
+    def play():
+        game:
+
