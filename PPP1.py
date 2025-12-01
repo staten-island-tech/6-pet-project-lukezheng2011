@@ -12,3 +12,20 @@ Billybob = Hero("Billybob", 67, ['Johnnys Shoes', 'Williams Backpack'])
 
 Billybob.buy(input("What items would you like to add to Billybob's inventory: "))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

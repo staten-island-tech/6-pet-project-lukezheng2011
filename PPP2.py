@@ -26,5 +26,5 @@ class Pet:
         self.happiness == happiness
 
     def play():
-        game:
+        playIn = input("How long shall you play during ")
 
