@@ -20,11 +20,15 @@
 # A method to play() that increases happiness
 # A method to show_status() that prints how happy the pet is
 
+happiness = 0
 class Pet: 
     def __init__(self, name, happiness):
         self.name == name
-        self.happiness == happiness
+        self.__happiness == happiness
 
-    def play():
-        playIn = input("How long shall you play during ")
+    def play(happiness):
+        playIn = input("Enter in any text to increase the happiness: ")
+    
+    def show_status():
+        print(happiness)
 
