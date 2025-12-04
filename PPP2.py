@@ -36,4 +36,4 @@ class Pet:
 happiness = 0
 
 pet = ("Johnny",0)
-pet.play()
+pet.play(3)
