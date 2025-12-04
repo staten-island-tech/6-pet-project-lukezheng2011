@@ -25,15 +25,22 @@ class Pet:
     def __init__(self, name, happiness):
         self.name == name
         self.__happiness == happiness
-
-    def play(happiness):
-        happiness = happiness + input("How much happier do you want your pet to be: ")
-
     
-    def show_status():
-        print(happiness)
+    
+    happiness = 0
+    def play(increase):
 
-happiness = 0
+        happiness += increase
+
+
+
+
+
+    def show_status():
+        print(f"Your pet's happiness is {happiness}")
+
+
 
 pet = ("Johnny",0)
-pet.play(3)
+Pet.play(int(input("How long did you play for: ")))
+
