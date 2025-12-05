@@ -28,12 +28,10 @@ class Pet:
     
     
     happiness = 0
-    def play(increase):
+    
+    def play(happiness):
 
-        happiness += increase
-
-
-
+        self.happiness += increase
 
 
     def show_status():
