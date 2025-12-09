@@ -28,18 +28,23 @@ class Pet:
         self.__happiness == happiness
     
     def show_status(self):
-        print(f"Your pet's happiness is {happiness}")
+        print(f"Your pet's happiness is {happiness}.")
 
 
 
-    def play(self):
+    def play(self,increase):
 
-        happiness += increase
+        increase = input("To play with your pet (like a good person), enter Y. To commit animal abuse, enter N.")
+
+    def sleep(self):
+
+
+thePet = Pet("Bob",11)
+thePet.play(5)
 
 
 
-
-
+# 6767676767676767676767
 # Pet.play(5)
 # Pet.show_status()
 
