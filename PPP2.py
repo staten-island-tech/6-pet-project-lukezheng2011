@@ -36,12 +36,14 @@ class Pet:
 
         increase = input("To play with your pet (like a good person), enter Y. To commit animal abuse, enter N.")
 
+
+
     def sleep(self):
-        #a
+        print("test")
         
 
-thePet = Pet("Bob",11)
-thePet.play(5)
+Pet("Bob",11)
+Pet.play(5)
 
 
 
