@@ -17,6 +17,7 @@
 
 # A name
 # A private variable for happiness level (e.g., __happiness)
+
 # A method to play() that increases happiness
 # A method to show_status() that prints how happy the pet is
 
