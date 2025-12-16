@@ -31,8 +31,6 @@ class Pet:
     def show_status(self):
         print(f"Your pet's happiness is {happiness}.")
 
-
-
     def play(self,increase):
 
         increase = input("To play with your pet (like a good person), enter Y. To commit animal abuse, enter N.")
