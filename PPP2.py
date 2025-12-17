@@ -21,28 +21,35 @@
 # A method to play() that increases happiness
 # A method to show_status() that prints how happy the pet is
 
-happiness = 0
-increase = 0
-class Pet: 
+class Pet:
     def __init__(self, name, happiness):
-        self.name == name
-        self.__happiness == happiness
-    
+        self.name = name
+        self.__happiness = happiness
+
     def show_status(self):
-        print(f"Your pet's happiness is {happiness}.")
+        print(f"{self.name}'s happiness is {self.__happiness}.")
 
-    def play(self,increase):
+    def play(self):
+        willPlay = input(
+            "To play with your pet, enter Y. To be an abusive owner, enter N: "
+        )
 
-        increase = input("To play with your pet (like a good person), enter Y. To commit animal abuse, enter N.")
-
-
+        if willPlay.upper() == "Y":
+            self.__happiness += 5
+        elif willPlay.upper() == "N":
+            self.__happiness -= 5
 
     def sleep(self):
-        print("test")
-        
+        self.__happiness += 67
 
-Pet("Bob",11)
-Pet.play(5)
+pet = Pet("Bob", 11)
+
+unhappy = 0
+while unhappy == 0:
+    pet.show_status()
+    pet.play()
+    pet.show_status()
+
 
 
 
