@@ -26,8 +26,11 @@ class Pet:
         self.name = name
         self.__happiness = happiness
 
-    def show_status(self):
+    def show_status1(self):
         print(f"{self.name}'s happiness is {self.__happiness}.")
+
+    def show_status2(self):
+        print(f"Hello! {self.name}'s happiness is {self.__happiness}. Make it happy!")
 
     def play(self):
         willPlay = input(
@@ -42,13 +45,14 @@ class Pet:
     def sleep(self):
         self.__happiness += 67
 
-pet = Pet("Bob", 11)
+pet = Pet(input("What's your pet's name: "), 25)
 
 unhappy = 0
+pet.show_status1()
 while unhappy == 0:
-    pet.show_status()
+
     pet.play()
-    pet.show_status()
+    pet.show_status2()
 
 
 
