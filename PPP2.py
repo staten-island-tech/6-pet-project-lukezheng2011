@@ -20,7 +20,7 @@
 
 # A method to play() that increases happiness
 # A method to show_status() that prints how happy the pet is
-
+unhappy = 0
 class Pet:
     def __init__(self, name, happiness):
         self.name = name
@@ -28,31 +28,44 @@ class Pet:
 
     def show_status1(self):
         print(f"{self.name}'s happiness is {self.__happiness}.")
+        print(f"Your pet is (self)")
 
     def show_status2(self):
-        print(f"Hello! {self.name}'s happiness is {self.__happiness}. Make it happy!")
+        if self.__happiness >=100:
+            print("The end")
+            self.unhappy=1
+        print(f"{self.name}'s happiness is {self.__happiness}. To be a good boy, make it happier or put it to sleep!")
 
     def play(self):
-        willPlay = input(
-            "To play with your pet, enter Y. To be an abusive owner, enter N: "
-        )
+        play1 = input("To play with your pet, enter Y. To be an abusive owner, enter N: ")
 
-        if willPlay.upper() == "Y":
+        if play1.upper() == "Y":
             self.__happiness += 5
-        elif willPlay.upper() == "N":
+        elif play1.upper() == "N":
             self.__happiness -= 5
 
     def sleep(self):
-        self.__happiness += 67
+        sleep1 = input("To put your pet to sleep, enter Y. To be an abusive owner, enter N: ")
+
+        if sleep1.upper() == "Y":
+            self.__happiness += 30
+        elif sleep1.upper() == "N":
+            self.__happiness -= 0
+
 
 pet = Pet(input("What's your pet's name: "), 25)
 
-unhappy = 0
+
 pet.show_status1()
+
 while unhappy == 0:
 
     pet.play()
     pet.show_status2()
+    pet.sleep()
+    pet.show_status2()
+
+
 
 
 
