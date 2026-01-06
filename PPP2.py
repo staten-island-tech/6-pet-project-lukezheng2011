@@ -90,7 +90,7 @@ class Pet:
             self.__tired = 10 
 
     def is_tired(self):
-        return self.__tired > 9 #used chatgpt to do this part - still not completely sure why it works
+        return self.__tired > 9 #used chatgpt to do this part - still not completely sure why it works. only part where I used.
     
     def victory(self):
         if self.__happiness > 200:
