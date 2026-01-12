@@ -90,19 +90,15 @@ class Pet:
             self.__tired = 10 
 
     def is_tired(self):
-        return self.__tired > 9 #used chatgpt to do this part - still not completely sure why it works. only part where I used.
+        return self.__tired > 9 #used chatgpt to do this part - still not completely sure why it works. only part where I used. and the "and not pet.is_tired():" in the while loop
     
     def victory(self):
         if self.__happiness > 200:
-            print("Your pet's happpiness has exceeded 200! You've won!")
+            print("Your pet's happpiness has exceeded 200! You've won! (Good boy)")
             self.hasWon = True
             
-            
-          
-
 
 pet = Pet(input("What's your pet's name: "),0,0)
-
 
 
 pet.show_status1()
